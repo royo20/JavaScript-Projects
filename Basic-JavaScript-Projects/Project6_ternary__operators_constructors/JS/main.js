@@ -1,4 +1,4 @@
-//variety of different programs
+//Uariety of different programs
 
 //utilizing the ternaty operator
 //function for height requirement
