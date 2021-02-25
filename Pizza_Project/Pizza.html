@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Menu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="Pizza_JavaScript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css"/>
+    </head>
+    <body>
+        <div id="menuBG">
+            <h1 style="margin: 0 0px 0 20px;">Pizza Drill Menu</h1>
+            <input id="btnOrder" type="button" onclick="getReceipt()"
+                value="Place Order">
+            <form id="frmMenu">
+                <div class="menu left">
+                    <!--Size-->
+                    <h3>Size:</h3>
+                    <input class="size" type="radio" name="Size"
+                        value="Personal Pizza">Personal Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Small Pizza">Extra Large Pizza<br> 
+                    <input class="size" type="radio" name="Size"
+                        value="Medium Pizza">Media Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Large Pizza" checked>Large Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Extra Large Pizza">Extra Large Pizza<br>        
+                </div>
+                <div class="menu middle">
+                    <!--vegis-->
+                    <h3>Vegetables:</h3>
+                    <input class="vegi" type="checkbox" name="Vegi"
+                        value="Mushrooms">Mushrooms<br>
+                    <input class="vegi" type="checkbox" name="Vegi"
+                        value="Onions">Onions<br> 
+                    <input class="vegi" type="checkbox" name="Vegi"
+                        value="Tomatoes">Tomatoes<br>
+                    <input class="vegi" type="checkbox" name="Vegi"
+                        value="Olives">Olives<br>
+                    <input class="vegi" type="checkbox" name="Vegi"   
+                        value="Green Peppers">Green Peppers<br>    
+                </div>
+                <div class="menu right">
+                    <!--meats-->
+                    <h3>Meats:</h3>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Pepperoni">Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Sausage">Sausage<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Canadian Bacon">Canadian Bacon<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Ground Beef">Ground Beef<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Anchovy">Anchovy<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Chicken">Chicken<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Salami">Salami<br>    
+                </div>
+                <div id="cart">
+                    <div id="ShowText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
