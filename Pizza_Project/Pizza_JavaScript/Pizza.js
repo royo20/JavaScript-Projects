@@ -84,9 +84,11 @@ if (toppingCount > 1) {
 } else {
     toppingTotal = 0;
 }
+runningTotal += toppingTotal;
 //calling to add getVegi function
 getVegi(runningTotal,text1);
 runningTotal = (runningTotal + toppingTotal +vegiTotal);
+
 console.log("total selected topping items: "+toppingCount);
 console.log(toppingCount+" topping -1 free topping = "+"$"+toppingTotal+".00");
 console.log("topping text1: "+text1);
