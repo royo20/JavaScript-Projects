@@ -114,7 +114,7 @@ keys.addEventListener("click", (event) => {
 
     //ensures that AC clears the numbers from the Calculator
     if (target.classList.contains("all-clear")) {
-        Calculator_Rest();
+        Calculator_Reset();
         Update_Display();
         return;
     }
