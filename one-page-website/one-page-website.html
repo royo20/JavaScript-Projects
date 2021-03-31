@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Portland Zoo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<!--<link rel="stylesheet" href="./css/one-page-web-animation.css">-->
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+	
+		<!--NAV-->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--END-NAV-->
+		
+		<!--HOME-->
+		<div id="home">
+			<div class="container">
+				<div class="center">
+					<div class="vid">
+						<!--VID-->
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/ad2anrWsl3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!--END-VID-->
+					</div>
+				<span class="head-main">Portland ZOO</span>
+				</div>
+			</div>
+		</div>
+		<!--END-HOME-->
+		
+		<!--GALLERY-->
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+					
+
+					<!--PHOTO-CONT-1-->
+					<div class="photo-container">
+					<div class="photo">
+			
+							<img src="../one-page-website/Thumb/Thumbnail_1.png"  style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					
+					</div>
+					</div>
+					
+					<!--END-PHOTO-CONT-2-->
+					<div class="photo-container">
+					<div class="photo">	
+					
+							<img src="../one-page-website/Thumb/Thumbnail_2.png"  style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				
+					</div>
+					</div>
+					
+					<!--PHOTO-CONT-3-->
+					<div class="photo-container">
+					<div class="photo">
+					
+							<img src="../one-page-website/Thumb/Thumbnail_3.png"  style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					
+					</div>
+					</div>
+					<!--END-PHOTO-CONT-3-->
+
+					<!--the modal/lightbox-->
+
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="../one-page-website/Thumb/wide_pic_1.png" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="../one-page-website/Thumb/wide_pic_2.png" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="../one-page-website/Thumb/wide_pic_3.png" style="width:100%">
+						  </div>
+		
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+
+						  <div class="photo-container">
+						  <div class="photo">
+							<img class="demo cursor" src="../one-page-website/Thumb/wide_pic_1.png" style="width:100%" onclick="currentSlide(1)" alt="Elephants">
+						  </div>
+						  </div>
+
+						  <div class="photo-container">
+							<div class="photo">
+							<img class="demo cursor" src="../one-page-website/Thumb/wide_pic_2.png" style="width:100%" onclick="currentSlide(2)" alt="Lions">
+						  </div>
+						  </div>
+
+						  <div class="photo-container">
+							<div class="photo">
+							<img class="demo cursor" src="../one-page-website/Thumb/wide_pic_3.png" style="width:100%" onclick="currentSlide(3)" alt="Giraffes">
+						  </div>
+						  </div>
+						  
+						</div>
+					  </div>
+					</div>		  
+
+				</div>
+			
+		</section>
+		<!--END-GALLERY-->
+		
+		<!--CONTACT-->
+			<section id="contact">
+				<div class="container">
+					<div>
+						<h1>Contact</h1>
+							<div class="reservation">
+							<h2><span>Sign up for weekly reports about our zoo!</span></h2>
+								<div class="form">
+									<form section="" method="post">
+										<input class="contact" type="text" value="" placeholder="First Name">
+										<input class="contact" type="text" value="" placeholder="Last Name">
+										<input class="contact" type="text" value="" placeholder="Email Address">
+										<div class="submit">
+										<input type="submit" value="Submit">
+										</div>
+									</form>
+								</div>
+							</div>
+					</div>
+				</div>
+			</section>
+		<!--END-CONTACT-->
+		
+		<!--FOOTER-->
+		<footer>
+		<div id="footer">
+			www.portlandzoo.coom &nbsp;|&nbsp; &copy; 2020
+		</div>
+		<!--END-FOOTER-->
+		</footer>
+	</body>
+</html>
